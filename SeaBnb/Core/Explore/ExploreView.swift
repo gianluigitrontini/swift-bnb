@@ -8,22 +8,35 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @State private var showDestinationSearchView = false
+    
     var body: some View {
         NavigationStack {
-            ScrollView {
-                LazyVStack(spacing: 32, pinnedViews: [.sectionHeaders]) {
-                    Section(header: SearchAndFilterBar()) {
-                        ForEach(0 ... 10, id: \.self) { listing in
-                            NavigationLink(value: listing) {
-                                ListingItemView()
+            
+            if (showDestinationSearchView) {
+                DestinationSearchView(show: $showDestinationSearchView)
+            } else {
+                ScrollView {
+                    LazyVStack(spacing: 32, pinnedViews: [.sectionHeaders]) {
+                        Section(
+                            header: SearchAndFilterBar().onTapGesture {
+                                withAnimation(.snappy) {
+                                    showDestinationSearchView.toggle()  
+                                }
+                            }) {
+                                ForEach(0 ... 10, id: \.self) { listing in
+                                    NavigationLink(value: listing) {
+                                        ListingItemView()
+                                    }
+                                }
                             }
-                        }
+                        
                     }
-                    
                 }
-            }
-            .navigationDestination(for: Int.self) { listing in
-                Text("Listing detail view")
+                .navigationDestination(for: Int.self) { listing in
+                    ListingDetailView()
+                        .navigationBarBackButtonHidden()
+                }
             }
         }
     }

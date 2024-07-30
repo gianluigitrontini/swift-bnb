@@ -16,6 +16,7 @@
 		5343CC462C53F0CB00B1A41C /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343CC452C53F0CB00B1A41C /* SearchAndFilterBar.swift */; };
 		5343CC482C53FD0B00B1A41C /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343CC472C53FD0B00B1A41C /* ListingDetailView.swift */; };
 		5343CC4B2C53FD9F00B1A41C /* ListingImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343CC4A2C53FD9F00B1A41C /* ListingImageCarouselView.swift */; };
+		5343CC4D2C57C1A400B1A41C /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343CC4C2C57C1A400B1A41C /* DestinationSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5343CC452C53F0CB00B1A41C /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		5343CC472C53FD0B00B1A41C /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 		5343CC4A2C53FD9F00B1A41C /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
+		5343CC4C2C57C1A400B1A41C /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				5343CC412C53E9E400B1A41C /* ExploreView.swift */,
 				5343CC452C53F0CB00B1A41C /* SearchAndFilterBar.swift */,
+				5343CC4C2C57C1A400B1A41C /* DestinationSearchView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5343CC4B2C53FD9F00B1A41C /* ListingImageCarouselView.swift in Sources */,
+				5343CC4D2C57C1A400B1A41C /* DestinationSearchView.swift in Sources */,
 				5343CC272C53E6D500B1A41C /* ContentView.swift in Sources */,
 				5343CC442C53EA8000B1A41C /* ListingItemView.swift in Sources */,
 				5343CC422C53E9E400B1A41C /* ExploreView.swift in Sources */,
